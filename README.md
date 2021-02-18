@@ -1,6 +1,11 @@
 # Wald Test App
 This is the repository for small test app
 
+## Screens
+
+|![Splash](https://github.com/nalivajr/waldo-test-app/blob/main/screens/slash.png)|![Login](https://github.com/nalivajr/waldo-test-app/blob/main/screens/login.png)|![Album](https://github.com/nalivajr/waldo-test-app/blob/main/screens/album.png)|
+|----------|----------|----------|
+
 ## Notes
 
 App is built using
