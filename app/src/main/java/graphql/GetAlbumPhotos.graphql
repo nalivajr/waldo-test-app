@@ -1,0 +1,17 @@
+query GetAlbumPhotos($id: RecordID!, $offset: Int!, $limit: Int!) {
+  album(id: $id) {
+    id
+    name
+    photos(slice: { limit: $limit, offset: $offset }, for_web_gallery: true) {
+      records {
+        id
+        thumbnail_urls {
+          size_code
+          height
+          width
+          url
+        }
+      }
+    }
+  }
+}

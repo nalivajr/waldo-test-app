@@ -1,0 +1,6 @@
+mutation DoLogin($email: String!, $password: String!) {
+  accountLogin(input: { email: $email, password: $password }) {
+    success
+    auth_token
+  }
+}

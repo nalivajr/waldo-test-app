@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Waldo Test App</string>
+    <string name="error_no_network">Please check network connection</string>
+    <string name="error_unexpected_try_again">Sorry, error occurred. Please try again</string>
+    <string name="error_invalid_input">Invalid value</string>
+    <string name="error_username_required">Login is required</string>
+    <string name="error_username_invalid">Incorrect email</string>
+    <string name="error_password_required">Password is required</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="login_button">Login</string>
+</resources>

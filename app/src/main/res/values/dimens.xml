@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="space_tiny">2dp</dimen>
+    <dimen name="space_small">4dp</dimen>
+    <dimen name="space_medium">8dp</dimen>
+    <dimen name="space_large">16dp</dimen>
+    <dimen name="space_xlarge">32dp</dimen>
+
+    <dimen name="image_card_radius">7dp</dimen>
+    <dimen name="cellMargin">1dp</dimen>
+</resources>
