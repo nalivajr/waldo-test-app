@@ -1,9 +1,9 @@
-# waldo-test-app
+# Wald Test App
 This is the repository for small test app
 
 ## Notes
 
-App is build using
+App is built using
 - Koin
 - Coroutines
 - AnroidX and arch components
@@ -19,7 +19,7 @@ For test purpose on login page please do long press on login button to fill form
 
 Coroutines are used to execute complex operations and data loading. Mainly, they are used as 
 `viewModelScope.launch` (e.g. `LoginViewModel`) to start some operation. Once operation is ready,
-result is process (e.g. dispatch errors) and posted to UI.
+result is processed (e.g. dispatch errors) and posted to UI.
 If you see into `WaldoAPI` and `WaldoApiImpl` you may notice, that functions are not marked as
 `suspend` and inside `WaldoApiImpl` operations are executed in `runBlocking`. That was done in order to
 keep different application components as a simple classes, and do not tie with coroutines technology.
@@ -31,19 +31,19 @@ can be asynchronous.
 
 ## Error handling
 
-Application have simple error handing. The most common network, validation are 
-handled. All other errors is considered as unexpected. 
+Application has simple error handing. The most common network and validation errors are 
+handled. All other errors are considered as unexpected. 
 The main idea is to throw exception of particular type if app faces with a problem,
 which then are translated to user friendly message using `ErrorDispatcher` (mostly in View models)
 
 ## Tests
 
 Unfortunately because of restricted time, unit tests were not added
-But since clean arhitecure is used, different components of the app is represented with the interfaces, 
+But since clean arhitecure is used, different components of the app are represented with the interfaces, 
 so we can easily Mock them with Mockito framework and check.
 
 Apps designed to allow to cover all the domain logic (network, domain services (or repositories), etc.) 
-with usual unit tests, and only UI part requires other approach for testing (if needed)
+with usual unit tests, and only UI part requires other approach for testing (if needed).
 
 ## Next steps
 
@@ -51,6 +51,6 @@ For improving app, next is need to be done
 1. Add unit tests
 2. Save token for active user in prefs (or even secure prefs) and open album if session is active
 3. Add action bar with menu to log user out
-4. add placeholder if image failed to load
+4. Add placeholder if image failed to load
 5. Right now app load medium2x thumbnails, but it's possible to configure based on device screen size
 or other rules
